@@ -6,6 +6,7 @@
 package main;
 
 import entity.CodPostEntity;
+import implement.CodPostServiceImplement;
 
 /**
  *
@@ -18,7 +19,8 @@ public class CodPostMain {
      */
     public static void main(String[] args) {
 
-        CodPostEntity nuevoCod = new CodPostEntity();
+        CodPostServiceImplement newService = new CodPostServiceImplement();
+        newService.menu();
         
        
 

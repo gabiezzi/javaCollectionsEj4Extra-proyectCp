@@ -16,7 +16,8 @@ public interface CodPostService {
     
     public CodPostEntity createNewCP();
     public String showAllCp();
-    public String showCpSelected(int cpSelected);
-    public String addToTheMap(Integer codPost, CodPostEntity newCP);
+    public Boolean showCpSelected(int cpSelected);
+    public String addToTheMap(CodPostEntity newCP);
+    public Boolean removeCpsSelected(int[] cpsToRemove);
     public void menu();
 }
